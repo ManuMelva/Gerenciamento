@@ -7,6 +7,12 @@ function greet(name) {
     return `Olá, ${name}! Seja bem-vindo(a) ao nosso software.`;
   }
   
-  console.log("Versão 1.2");
-  console.log(greet(""));
+  function getCurrentDateTime() {
+    const now = new Date();
+    return now.toLocaleString("pt-BR");
+  }
+  
+  console.log("Versão com nova funcionalidade");
+  console.log(greet("João"));
+  console.log("Data/hora atual:", getCurrentDateTime());
   
